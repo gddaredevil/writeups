@@ -34,7 +34,7 @@ The value corresponding to this key in `cypher.txt`: `cxkl,_}o 4+tzrwe7ig9bfu5a-
 
 The charstring in the program: `abcdefghijklmnopqrstuvwxyz1234567890 _+{}-,.:`
 
-So, I wrote a tiny python program called 'decrypter.py' to traverse cipher_text and search for each of its char in value of key-value pair and replace the char with the corresponding element in the charstring.
+So, I wrote a tiny python program called `decrypter.py` to traverse cipher_text and search for each of its char in value of key-value pair and replace the char with the corresponding element in the charstring.
 
 The flag obtained after decryption was:
 
