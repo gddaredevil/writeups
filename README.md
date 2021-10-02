@@ -20,4 +20,4 @@ You can find the flag in the HTTP Stream.
 
 `dsc{H3_1S_th3_83sT_p1r4t3_1_H4V3_3V3r_s33n}`
 
-![HTTP Stream Screenshot](https://github.com/gddaredevil/writeups/HTTP_Stream.png)
+![HTTP Stream Screenshot](https://github.com/gddaredevil/writeups/blob/master/HTTP_Stream.png)
