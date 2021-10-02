@@ -2,7 +2,7 @@ from random import choice
 
 inputstring = input("Enter plaintext: ")
 
-#Selects a random key and its corresponding value and returns them
+# Reads 'cypher.txt' and selects a random key and its corresponding value and returns them
 def read_encryption_details():
     with open("cypher.txt") as file:
         encrypt_text = eval(file.read())
@@ -10,7 +10,7 @@ def read_encryption_details():
         character_key = encrypt_text[encrypt_key]
     return encrypt_key, character_key
 
-#returns a dictionary with each letter from charstring as key and each corresponding letter from character_key(value from above func) as value #Max_length=45
+# Returns a dictionary with each letter from charstring as key and each corresponding letter from character_key(value returned from above func) as a value #Max_length of flag is 45 as the length of charstring is 45 and zip function always considers the smallest string or list as its size-limitting structure
 def create_encryption(character_key):
     charstring = "abcdefghijklmnopqrstuvwxyz1234567890 _+{}-,.:"
     final_encryption = {}
@@ -18,7 +18,7 @@ def create_encryption(character_key):
         final_encryption[i] = j
     return final_encryption
 
-#key[:3]+cypher_text+key[3:]
+# Returns cipher text in the form of key[:3]+cypher_text+key[3:]
 def convert_plaintext_to_cypher(inputstring, final_encryption, encrypt_key):
     cypher_text = ""
     for i in inputstring:
